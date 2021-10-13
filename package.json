@@ -45,6 +45,7 @@
     "@testing-library/cypress": "^8.0.1",
     "cypress": "^8.5.0",
     "cypress-dark": "^1.8.0",
+    "cypress-log-to-output": "^1.1.2",
     "eslint-plugin-cypress": "^2.12.1",
     "nodemon": "^2.0.13"
   }

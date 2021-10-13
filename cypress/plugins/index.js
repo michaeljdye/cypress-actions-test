@@ -17,5 +17,19 @@
  */
 // eslint-disable-next-line no-unused-vars
 module.exports = (on, config) => {
+  on("before:browser:launch", (browser, launchOptions) => {
+    if (browser.name === "chrome" && browser.isHeadless) {
+      launchOptions.args.push("--disable-gpu");
+
+      launchOptions.args =
+        require("cypress-log-to-output").browserLaunchHandler(
+          browser,
+          launchOptions.args
+        );
+
+      return launchOptions;
+    }
+  });
+
   require("cypress-log-to-output").install(on);
 };

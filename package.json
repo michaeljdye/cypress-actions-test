@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "cypress run --headless",
+    "test": "cypress run --browser chrome",
     "testWatch": "nodemon -e js,jsx --exec cypress run",
     "e2e": "cypress open",
     "eject": "react-scripts eject"

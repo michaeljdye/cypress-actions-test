@@ -2,5 +2,8 @@
   "theme": "cypress-dark",
   "experimentalStudio": true,
   "video": false,
-  "projectId": "zvmvhg"
+  "projectId": "zvmvhg",
+  "env": {
+    "REACT_APP_MOVIE_API": "fake"
+  }
 }

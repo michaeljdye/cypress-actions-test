@@ -18,3 +18,5 @@ jobs:
           wait-on-timeout: 20
           browse: chrome
           headless: true
+        env:
+          REACT_APP_MOVIE_API: ${{ secrets.REACT_APP_MOVIE_API }}
